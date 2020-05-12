@@ -41,14 +41,12 @@ include_once(DOC_ROOT.'/classes/class.smtp.php');
 include_once(DOC_ROOT.'/classes/sendmail.class.php');
 
 $smarty = new Smarty;
-$Usr = $_SESSION['Usr'];
-
 /*$role->setAdmin($Usr['admin']);
 
 $role->setRolId($Usr['rol_id']);
 $permissions = $role->getPermisosByRol();
 $smarty->assign('privilegios', $permissions);*/
-$smarty->assign('Usr',$_SESSION['Usr']);
+$smarty->assign('Usr',$_SESSION['Usuario']);
 $smarty->assign('DOC_ROOT',DOC_ROOT);
 $smarty->assign('WEB_ROOT',WEB_ROOT);
 ?>

@@ -52,7 +52,7 @@ class User extends Main
 
     public function AllowAccess($page = '')
     {
-        $User = $_SESSION['Usr'];
+        $User = $_SESSION['Usuario'];
 
         if (!$User['isLogged']) {
             header('Location: ' . WEB_ROOT . '/login');
@@ -69,7 +69,7 @@ class User extends Main
 
     public function allow_access_module($page)
     {
-        $this->Util()->Rol()->setRolId($_SESSION['Usr']["rol_id"]);
+        $this->Util()->Rol()->setRolId($_SESSION['Usuario']["rol_id"]);
         $allowPages = $this->Util()->Rol()->getPermisosByRol();
         if (in_array($page, $allowPages))
             return true;
@@ -105,7 +105,7 @@ class User extends Main
         if ($row) {
             $card =  $row;
             $card['isLogged'] = true;;
-            $_SESSION['Usr'] = $card;
+            $_SESSION['Usuario'] = $card;
             return true;
         } else {
             $this->Util()->setError(10006, 'error', '');

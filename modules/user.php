@@ -1,6 +1,6 @@
 <?php
 
-	$Usr = $_SESSION['Usr'];
+	$Usr = $_SESSION['Usuario'];
 	$smarty->assign('Usr',$Usr);
 
 ?>

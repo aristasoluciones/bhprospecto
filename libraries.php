@@ -48,7 +48,6 @@ $Usr = $_SESSION['Usr'];
 $role->setRolId($Usr['rol_id']);
 $permissions = $role->getPermisosByRol();
 $smarty->assign('privilegios', $permissions);*/
-
 $smarty->assign('Usr',$_SESSION['Usr']);
 $smarty->assign('DOC_ROOT',DOC_ROOT);
 $smarty->assign('WEB_ROOT',WEB_ROOT);

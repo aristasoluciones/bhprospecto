@@ -9,7 +9,6 @@ include_once(DOC_ROOT."/libs/PHPExcel/Classes/PHPExcel.php");
 include_once(DOC_ROOT.'/classes/db.class.php');
 $db = new DB;
 
-
 include_once(DOC_ROOT.'/classes/error.class.php');
 $error = new CustomError;
 

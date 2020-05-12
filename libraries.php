@@ -39,6 +39,7 @@ $leaflet = new Leaflet;
 include_once(DOC_ROOT.'/classes/class.phpmailer.php');
 include_once(DOC_ROOT.'/classes/class.smtp.php');
 include_once(DOC_ROOT.'/classes/sendmail.class.php');
+$leaflet->getTest();
 
 $smarty = new Smarty;
 /*$role->setAdmin($Usr['admin']);

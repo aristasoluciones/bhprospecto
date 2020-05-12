@@ -378,4 +378,10 @@ class Leaflet extends Main
         $this->Util()->PrintErrors();
         return true;
     }
+
+    public function getTest(){
+        $sQuery =  "select * from personal order by name desc";
+        $this->Util()->DB()->setQuery($sQuery);
+        var_dump($this->Util()->DB()->GetResult());
+    }
 }

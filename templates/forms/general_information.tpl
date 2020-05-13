@@ -143,7 +143,7 @@
     <div class="container">
         <div class="col-md-12">
             <div class="form-group">
-                <label class="control-label">Correo electronico
+                <label class="control-label">Comentarios
                 </label>
                 <div>
                     <textarea class="form-control" name="general_comment"  id="general_comment"></textarea>

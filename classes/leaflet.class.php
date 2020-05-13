@@ -2,6 +2,8 @@
 
 class Leaflet extends Main
 {
+    protected $table = "prospect";
+
     private $id;
     public function setId($value) {
         $this->Util()->ValidateInteger();
@@ -302,7 +304,9 @@ class Leaflet extends Main
     public function create(){
         if($this->Util()->PrintErrors())
             return false;
-        $sql  ="INSERT INTO leaflet (
+        $table =  $this->table;
+
+        $sql  ="INSERT INTO $table(
                     name,
                     legal_representative,
                     business_activity,
@@ -377,11 +381,5 @@ class Leaflet extends Main
         $this->Util()->setError(0,"complete","Se ha enviado tus datos en breve le notificaremos el resultado.");
         $this->Util()->PrintErrors();
         return true;
-    }
-
-    public function getTest(){
-        $sQuery =  "select * from personal order by name desc";
-        $this->Util()->DB()->setQuery($sQuery);
-        var_dump($this->Util()->DB()->GetResult());
     }
 }

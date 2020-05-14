@@ -4,7 +4,7 @@ switch (urlLoc) {
         var WEB_ROOT = "http://" + urlLoc + "/bhprospecto";
         break;
     default:
-        var WEB_ROOT = "http://" + urlLoc + "/prospect";
+        var WEB_ROOT = "http://" + urlLoc + "/sysprospect";
         break;
 }
 

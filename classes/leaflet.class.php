@@ -114,7 +114,7 @@ class Leaflet extends Main
     private $sale_amount_per_month;
     public function setSaleAmountPerMonth($value) {
         $this->Util()->ValidateRequireField($value, "");
-        $this->contact_email = $value;
+        $this->sale_amount_per_month = $value;
     }
     public function getSaleAmountPerMonth() {
         return $this->contact_email;

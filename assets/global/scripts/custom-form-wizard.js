@@ -92,7 +92,7 @@ var FormWizard = function () {
                      specific_help_tax_obligation: {
                          required: true
                      },
-                     required_specific_transact_tax: {
+                     specific_transact_tax: {
                          required: true
                      },
                      expectation: {
